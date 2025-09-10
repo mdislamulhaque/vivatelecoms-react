@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router";
 
 const images = [
   "https://i.ibb.co.com/v4gnbN48/4038711.jpg",
@@ -58,16 +59,18 @@ const HeroSection = () => {
           growth.
         </motion.p>
 
-        <motion.button
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-white text-blue-800 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider"
-        >
-          Get Started
-        </motion.button>
+        <Link to="/contact-us">
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white text-blue-800 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider cursor-pointer"
+          >
+            Get Started
+          </motion.button>
+        </Link>
       </div>
     </section>
   );

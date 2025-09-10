@@ -10,8 +10,8 @@
     { "label": "Partners", "url": "/partners" },
     { "label": "Personnel", "url": "/team" },
     { "label": "Careers", "url": "/careers" },
-    { "label": "About Us", "url": "/about-us" },
-    { "label": "Contact Us", "url": "/contact-us"}
+    { "label": "About Us", "url": "/about-us" }
+  
   ]
   
 }
