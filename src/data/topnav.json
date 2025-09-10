@@ -1,0 +1,11 @@
+{
+  "contact": {
+    "email": "info@vivatelecoms.com"
+  },
+  "socials": [
+    { "name": "twitter", "url": "#", "icon": "twitter" },
+    { "name": "facebook", "url": "#", "icon": "facebook" },
+    { "name": "linkedin", "url": "#", "icon": "linkedin" },
+    { "name": "youtube", "url": "#", "icon": "youtube" }
+  ]
+}

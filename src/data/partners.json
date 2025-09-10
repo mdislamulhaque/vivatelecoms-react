@@ -1,0 +1,52 @@
+{
+  "partners": [
+    {
+      "name": "International Business Machine (IBM)",
+      "desc": "The International Business Machines Corporation is an American multinational technology and consulting corporation, headquartered in Armonk, New York, United States. Partnered with Vivacom for its Products and Services.",
+      "logo": "/partners/ibm-1.png",
+      "link": "#"
+    },
+    {
+      "name": "CISCO",
+      "desc": "Cisco Systems produces computer networking products and services. The Linksys brand of consumer networking products is an owned subsidiary of Cisco Systems. Vivacom is proud to partner with CISCO.",
+      "logo": "/partners/cisco-logo.png",
+      "link": "#"
+    },
+    {
+      "name": "Oracle",
+      "desc": "Oracle Corporation is an American multinational technology corporation headquartered in Redwood City, California. It engineers hardware and software to work together. Vivacom is proud to partner with Oracle.",
+      "logo": "/partners/LARGE-ORACLE-logo.png",
+      "link": "#"
+    },
+    {
+      "name": "CD Networks",
+      "desc": "CD Networks enables Global Cloud Acceleration. Their mission is to transform the Internet into a secure, reliable, scalable, high performing Application Delivery Network. Vivacom is proud to partner with CD Networks.",
+      "logo": "/partners/CDNetworks_logo.png",
+      "link": "#"
+    },
+    {
+      "name": "ESTEL Technologies",
+      "desc": "Estel Technologies, ISO 9001:2008 certified, is a leading Mobile Financial Services technology enabler with global presence among Telecom Operators, Banks, and Service Providers. Vivacom is proud to associate with them.",
+      "logo": "/partners/Estel-Logo_web.jpg",
+      "link": "#"
+    },
+    {
+      "name": "Kochar Info Tech (P) Ltd",
+      "desc": "Kochar, India’s leading private sector business house, has interests in IT, Consulting, BPO & KPO Services. They proudly partner with Vivacom.",
+      "logo": "/partners/kochar.png",
+      "link": "#"
+    },
+    {
+      "name": "Formula Telecom Solution",
+      "desc": "Formula Telecom Solution is a Mobile Financial Services technology enabler with significant global presence. Vivacom is proud to associate with them.",
+      "logo": "/partners/fts_logo.png",
+      "link": "#"
+    },
+    {
+      "name": "Hewlett Packard (HP)",
+      "desc": "HP, an American multinational IT company, develops and provides hardware, software and services to consumers, SMBs, enterprises and government, health, and education sectors.",
+      "logo": "/partners/HP_logo.png",
+      "link": "#"
+    }
+  ]
+}

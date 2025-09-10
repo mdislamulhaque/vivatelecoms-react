@@ -1,0 +1,31 @@
+{
+  "about": {
+    "title": "About Us",
+    "subtitle": "Know Who We Are",
+    "companyTitle": "About Our Company",
+    "companyText": [
+      "Vivacom is an ICT organization in the Enterprise Business Applications space providing innovative, cost-effective, scalable and configurable solutions & services to common business needs.",
+      "At Vivacom, we uphold innovation since we focus on deep, long-lasting client relationships and strong domain expertise which drives every facet of our day-to-day operation.",
+      "We aim to provide solutions that efficiently extend the capabilities of systems, to meet the needs of your specific business processes. For our clients, this translates into strategic business value.",
+      "Our entire focus is geared towards helping our clients derive value from their investment in ICT and become more successful in their core activities."
+    ],
+    "strengthTitle": "Our Strength",
+    "strengthList": [
+      "Technical expertise in software analysis, design and development.",
+      "Technical expertise in Operating Systems, Databases, Software applications, network and IT security.",
+      "Experience and expertise in ICT systems audit.",
+      "Experience in ICT consultancy.",
+      "Combined Technical experience in IT project management.",
+      "A clear vision to implement technology that suits your business needs.",
+      "Ability to Implement outstanding solution to ICT problems and bottlenecks.",
+      "Consistency and adequate resilience to growing demands of ICT services and solutions."
+    ],
+    "valuesTitle": "Our Core Values",
+    "valuesList": ["Quality", "Availability", "Flexibility", "Professionalism"],
+    "valuesText": "Professional and service oriented personnel will be at your service. Availability and quality is Viva’s motto. Our expertise in Mobile network environment, IT solution, accredited partnerships and tested methodologies provide us means to serve our clients well.",
+    "missionTitle": "Our Mission",
+    "missionText": "Our Mission is to offer excellent IT services in each of our professional disciplines, in accordance with statutory practices, codes of conduct and integrity, thereby developing our team and providing a leading platform from which to service our valued Clients.",
+    "visionTitle": "Our Vision",
+    "visionText": "Our vision is to grow our multi-disciplinary team in order to offer a broad spectrum of Information Technology services to become our Clients’ preferred Professional Service Provider of choice through excellence and efficiency in all aspects of the project life cycle."
+  }
+}

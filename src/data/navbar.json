@@ -1,0 +1,17 @@
+{
+  "logo": "https://i.ibb.co.com/dwQjzGyN/bg-removed-logo.png",
+  "navItems": [
+    { "label": "Home", "url": "/" },
+    {
+      "label": "Services",
+      "url": "/services"
+    },
+    { "label": "Solutions", "url": "/solutions" },
+    { "label": "Partners", "url": "/partners" },
+    { "label": "Personnel", "url": "/team" },
+    { "label": "Careers", "url": "/careers" },
+    { "label": "About Us", "url": "/about-us" },
+    { "label": "Contact Us", "url": "/contact-us"}
+  ]
+  
+}
