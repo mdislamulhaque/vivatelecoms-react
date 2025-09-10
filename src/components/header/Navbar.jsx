@@ -59,7 +59,7 @@ const MainNavbar = () => {
             </li>
           ))}
         </ul>
-        <div className="">
+        <div className="hidden md:block">
           {/* Contact Button */}
           <Link to="/contact-us">
             <motion.button
