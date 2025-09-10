@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router";
 
 const images = [
-  "https://i.ibb.co.com/v4gnbN48/4038711.jpg",
-  "https://i.ibb.co.com/5Wj8BBkt/pexels-tima-miroshnichenko-6914476.jpg",
-  "https://i.ibb.co.com/v4Dz9PVR/Bid3-min.png",
+  "/services/it-project-management.png",
+  "/banner-2.png",
+  "/services/it-consultancy.png",
 ];
 
 const HeroSection = () => {

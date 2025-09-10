@@ -40,6 +40,20 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-100 mb-4">
+              📍 Head Office
+            </h3>
+            <p className="text-gray-100">Vivacom Ltd Company,</p>
+            <p className="text-gray-100">Upper Hill, Upper Hill Road,</p>
+            <p className="text-gray-100 mb-4">NAIROBI</p>
+
+            <p className="text-gray-100">
+              <strong>Tel:</strong>{" "}
+              <span className="text-gray-100">+254 716568981/7</span>
+            </p>
+          </div>
           {/* Social Media */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
@@ -77,19 +91,6 @@ const Footer = () => {
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
-          </div>
-          <div >
-            <h3 className="text-xl font-semibold text-gray-100 mb-4">
-              📍 Head Office
-            </h3>
-            <p className="text-gray-100">Vivacom Ltd Company,</p>
-            <p className="text-gray-100">Upper Hill, Upper Hill Road,</p>
-            <p className="text-gray-100 mb-4">NAIROBI</p>
-
-            <p className="text-gray-100">
-              <strong>Tel:</strong>{" "}
-              <span className="text-gray-100">+254 716568981/7</span>
-            </p>
           </div>
         </div>
 
