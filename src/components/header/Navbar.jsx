@@ -116,7 +116,12 @@ const MainNavbar = () => {
             <div className="bg-purple-900/90 rounded-full p-2 text-white text-sm text-center md:hidden  hover:scale-105 transition">
               {/* Contact Button */}
               <Link to="/contact-us">
-                <button className="cursor-pointer">Contact Us</button>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="cursor-pointer"
+                >
+                  Contact Us
+                </button>
               </Link>
             </div>
           </ul>
