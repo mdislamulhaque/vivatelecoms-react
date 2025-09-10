@@ -10,7 +10,9 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             {/* <h3 className="text-xl font-semibold mb-4">VivaTelecoms</h3> */}
-            <img src="/bg-removed-logo.png" alt="" className="w-1/2" />
+            <img src="/bg-removed-logo.png" alt="" className="w-1/2"
+              onClick={() => window.scrollTo(0, 0)}
+            />
             <p className="text-gray-400">
               Connecting people and businesses with reliable telecom solutions.
             </p>
@@ -32,6 +34,7 @@ const Footer = () => {
                     <Link
                       to={item.url}
                       className="uppercase transition text-sm text-gray-100 hover:text-blue-50"
+                      onClick={() => window.scrollTo(0, 0)}
                     >
                       {item.label}
                     </Link>
