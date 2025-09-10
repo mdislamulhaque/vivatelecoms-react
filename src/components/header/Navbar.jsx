@@ -81,6 +81,7 @@ const MainNavbar = () => {
             <li key={idx}>
               <NavLink
                 to={item.url}
+                onClick={() => setIsOpen(false)} // <-- এখানে click এ menu hide
                 className={`block transition ${
                   scrolled
                     ? "text-gray-900 hover:text-blue-700"

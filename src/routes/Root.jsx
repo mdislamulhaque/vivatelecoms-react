@@ -8,6 +8,7 @@ import Team from "../pages/team/Team";
 import Careers from "../pages/careers/Careers";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import ContactUs from "../pages/contactUs/ContactUs";
+import NotFoundPage from "../pages/notFoundPage/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -48,4 +49,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/*",
+    element: <NotFoundPage/>,
+  }
 ]);
