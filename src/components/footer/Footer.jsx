@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             {/* <h3 className="text-xl font-semibold mb-4">VivaTelecoms</h3> */}
-            <img src="/bg-removed-logo.png" alt="" className="w-1/2"
+            <img src="/white-logo.png" alt="" className="h-16 mb-4 cursor-pointer"
               onClick={() => window.scrollTo(0, 0)}
             />
             <p className="text-gray-400">

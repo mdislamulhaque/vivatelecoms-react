@@ -37,7 +37,7 @@ const MainNavbar = () => {
             <img
               src={navbarData.logo}
               alt="Vivacom Logo"
-              className="h-8 md:h-10"
+              className="h-8 md:h-12"
             />
           </Link>
         </div>
