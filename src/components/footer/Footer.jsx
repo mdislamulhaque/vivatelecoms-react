@@ -4,16 +4,19 @@ import navbarData from "../../data/navbar.json";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-white text-gray-900 py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             {/* <h3 className="text-xl font-semibold mb-4">VivaTelecoms</h3> */}
-            <img src="/white-logo.png" alt="" className="h-16 mb-4 cursor-pointer"
+            <img
+              src="/black-logo.png"
+              alt=""
+              className="h-16 mb-4 cursor-pointer"
               onClick={() => window.scrollTo(0, 0)}
             />
-            <p className="text-gray-400">
+            <p className="text-gray-800">
               Connecting people and businesses with reliable telecom solutions.
             </p>
           </div>
@@ -33,7 +36,7 @@ const Footer = () => {
                   <li key={idx}>
                     <Link
                       to={item.url}
-                      className="uppercase transition text-sm text-gray-100 hover:text-blue-50"
+                      className="uppercase transition text-sm text-gray-800 hover:text-purple-500"
                       onClick={() => window.scrollTo(0, 0)}
                     >
                       {item.label}
@@ -45,16 +48,16 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold text-gray-100 mb-4">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
               📍 Head Office
             </h3>
-            <p className="text-gray-100">Vivacom Ltd Company,</p>
-            <p className="text-gray-100">Upper Hill, Upper Hill Road,</p>
-            <p className="text-gray-100 mb-4">NAIROBI</p>
+            <p className="text-gray-800">Vivacom Ltd Company,</p>
+            <p className="text-gray-800">Upper Hill, Upper Hill Road,</p>
+            <p className="text-gray-800 mb-4">NAIROBI</p>
 
-            <p className="text-gray-100">
+            <p className="text-gray-800">
               <strong>Tel:</strong>{" "}
-              <span className="text-gray-100">+254 716568981/7</span>
+              <span className="text-gray-800">+254 716568981/7</span>
             </p>
           </div>
           {/* Social Media */}
@@ -65,7 +68,7 @@ const Footer = () => {
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-800 hover:text-gray-900 transition-colors"
               >
                 <Twitter className="w-6 h-6" />
               </a>
@@ -73,7 +76,7 @@ const Footer = () => {
                 href="https://facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-800 hover:text-gray-900 transition-colors"
               >
                 <Facebook className="w-6 h-6" />
               </a>
@@ -81,7 +84,7 @@ const Footer = () => {
                 href="https://linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-800 hover:text-gray-900  transition-colors"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
@@ -89,7 +92,7 @@ const Footer = () => {
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-800 hover:text-gray-900  transition-colors"
               >
                 <Instagram className="w-6 h-6" />
               </a>
