@@ -11,9 +11,9 @@ const Footer = () => {
           <div>
             {/* <h3 className="text-xl font-semibold mb-4">VivaTelecoms</h3> */}
             <img
-              src="/black-logo.png"
+              src="https://vivacombd.com/assets/viva_logo-DlQXWyRC.png"
               alt=""
-              className="h-16 mb-4 cursor-pointer"
+              className="h-14 mb-4 cursor-pointer"
               onClick={() => window.scrollTo(0, 0)}
             />
             <p className="text-gray-800">

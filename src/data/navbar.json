@@ -1,5 +1,6 @@
 {
-  "logo": "/black-logo.png",
+ 
+  "logo": "https://vivacombd.com/assets/viva_logo-DlQXWyRC.png",
   "navItems": [
     { "label": "Home", "url": "/" },
     {
@@ -15,3 +16,6 @@
   ]
   
 }
+
+
+ 
