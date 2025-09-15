@@ -34,7 +34,7 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      await axios.post("https://api.vivacombd.com", form, {
+      await axios.post("https://api.vivacombd.com/api/contact", form, {
         headers: {
           "Content-Type": "application/json",
         },
