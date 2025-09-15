@@ -1,6 +1,6 @@
 {
  
-  "logo": "https://vivacombd.com/assets/viva_logo-DlQXWyRC.png",
+  "logo": "/vivacom-logo.png",
   "navItems": [
     { "label": "Home", "url": "/" },
     {

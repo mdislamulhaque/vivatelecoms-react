@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             {/* <h3 className="text-xl font-semibold mb-4">VivaTelecoms</h3> */}
             <img
-              src="https://vivacombd.com/assets/viva_logo-DlQXWyRC.png"
+              src="/vivacom-logo.png"
               alt=""
               className="h-14 mb-4 cursor-pointer"
               onClick={() => window.scrollTo(0, 0)}
