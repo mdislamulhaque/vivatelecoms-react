@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Services = () => {
   return (
     <section className="py-4 md:py-6 lg:py-12 mt-12">
-      <div className="text-center max-w-3xl mx-auto mb-12 ">
+      <div className="text-center max-w-3xl mx-auto mb-12">
         <p className="text-sm font-medium text-purple-600 tracking-wide uppercase">
           Know What Our Services Are
         </p>
@@ -29,7 +29,7 @@ const Services = () => {
           >
             {/* Image */}
             <motion.div
-              className="md:w-1/2 w-full h-94 overflow-hidden"
+              className="md:w-1/2 w-full h-[320px] overflow-hidden flex items-center justify-center"
               initial={{ x: idx % 2 === 1 ? 100 : -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -38,6 +38,9 @@ const Services = () => {
               <img
                 src={service.image}
                 alt={service.title}
+                loading="lazy" // ✅ Lazy load
+                width={600} // ✅ Fixed width
+                height={320} // ✅ Fixed height
                 className="w-full h-full object-cover rounded-t-2xl rounded-br-2xl shadow-lg border-l-4 border-b-4 border-blue-500/50"
               />
             </motion.div>

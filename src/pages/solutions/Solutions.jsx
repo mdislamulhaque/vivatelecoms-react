@@ -1,9 +1,9 @@
 import solutionsData from "../../data/solutions.json";
- import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Solutions = () => {
   return (
-    <section className="py-16 md:py-24 lg:py-32 ">
+    <section className="py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4">
         {/* 🔹 Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -20,15 +20,15 @@ const Solutions = () => {
             our clients to choose what suits their business needs.
           </p>
         </div>
+
         {/* 🔹 Solutions Grid */}
-       
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {solutionsData.solutions.map((solution, idx) => (
             <motion.div
               key={idx}
               className="relative overflow-hidden shadow-lg hover:shadow-xl transition 
                  border-l-4 border-b-4 border-blue-500/50 
-                 rounded-tl-2xl rounded-tr-2xl rounded-br-2xl hover:scale-103 duration-300"
+                 rounded-tl-2xl rounded-tr-2xl rounded-br-2xl hover:scale-[1.03] duration-300"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -38,7 +38,10 @@ const Solutions = () => {
               <img
                 src={solution.image}
                 alt={solution.title}
-                className="w-full h-auto object-cover"
+                loading="lazy" // ✅ Lazy load
+                width={400} // ✅ fixed dimension helps CLS
+                height={250}
+                className="w-full h-[250px] object-cover"
               />
 
               {/* Overlay Gradient */}
@@ -54,7 +57,7 @@ const Solutions = () => {
                     {solution.title}
                   </a>
                 </h5>
-                <p className="text-sm">{solution.desc}</p>
+                <p className="text-sm line-clamp-3">{solution.desc}</p>
               </div>
 
               {/* Clickable Link Overlay */}

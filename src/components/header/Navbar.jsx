@@ -69,7 +69,7 @@ const MainNavbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`${
-                scrolled ? "bg-purple-600 text-white" : "bg-white"
+                scrolled ? "bg-purple-700 text-white hover:bg-purple-800 transition" : "bg-white"
               } text-blue-800 font-medium rounded-full py-2 px-4 shadow-lg uppercase tracking-wider cursor-pointer`}
             >
               Contact Us

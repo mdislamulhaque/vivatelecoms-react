@@ -1,6 +1,7 @@
 import contactData from "../../data/contact.json";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 const Contact = () => {
   const { title, subtitle, about, address, phone, email } = contactData.contact;
@@ -12,19 +13,56 @@ const Contact = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", form);
-    alert("✅ Thank you for contacting us!");
-    setForm({ name: "", email: "", subject: "", message: "" });
+    setErrorMsg("");
+    setSuccessMsg("");
+
+    // 🔹 validation check
+    if (!form.name.trim() || !form.email.trim()) {
+      setErrorMsg("❌ Name and Email are required!");
+      return;
+    }
+
+    try {
+      setLoading(true);
+      await axios.post("https://api.vivacombd.com", form, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      // 🔹 success
+      setSuccessMsg("✅ Thank you for contacting us!");
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      // 🔹 error handle
+      if (error.response) {
+        setErrorMsg(
+          `❌ Server Error: ${
+            error.response.data.message || "Something went wrong!"
+          }`
+        );
+      } else if (error.request) {
+        setErrorMsg("❌ No response from server. Please try again later.");
+      } else {
+        setErrorMsg(`❌ Error: ${error.message}`);
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <section className="py-16 md:py-24 ">
+    <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         {/* 🔹 Header */}
         <div className="text-center mb-12">
@@ -35,7 +73,7 @@ const Contact = () => {
             {subtitle}
           </h2>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-10">
           {/* 🔹 Contact Form */}
           <motion.form
@@ -47,6 +85,10 @@ const Contact = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
+            {/* error / success message */}
+            {errorMsg && <p className="text-red-600 mb-4">{errorMsg}</p>}
+            {successMsg && <p className="text-green-600 mb-4">{successMsg}</p>}
+
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Your name
@@ -84,7 +126,6 @@ const Contact = () => {
                 name="subject"
                 value={form.subject}
                 onChange={handleChange}
-                required
                 className="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
             </div>
@@ -104,9 +145,10 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+              disabled={loading}
+              className="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition disabled:opacity-50"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </motion.form>
 
