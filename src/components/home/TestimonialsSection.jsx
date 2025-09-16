@@ -4,28 +4,34 @@ import { useEffect, useState } from "react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CTO, TechCorp",
+      name: "Mussie Eyob",
+      role: "Founder, Hidmona",
       content:
         "This platform transformed our business operations. The insights we've gained have driven a 34% increase in efficiency.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+        "/hidmona-H.jpg",
     },
     {
-      name: "Michael Chen",
-      role: "Product Director, InnovateCo",
+      name: "Ahmmed",
+      role: "CEO, PayOnTime",
       content:
         "The implementation was seamless, and their support team was exceptional throughout the entire process.",
       avatar:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
     },
     {
-      name: "Elena Rodriguez",
-      role: "CEO, FutureVision",
+      name: "Abdikadir Hussein",
+      role: "Director, TAKAFUL",
       content:
         "We've tried multiple solutions, but none delivered the results we've seen with this platform. Truly revolutionary.",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+      avatar: "/Abdikadir-Hussein-Chairman.jpg",
+    },
+    {
+      name: "Dr. Hassan Bashir ",
+      role: "Director, AIID",
+      content:
+        "We tested countless options, but nothing came close to the impact we’ve achieved here. This platform is a real game-changer.",
+      avatar: "/HASAN.jpg",
     },
   ];
 
