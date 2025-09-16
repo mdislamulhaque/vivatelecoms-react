@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
       name: "Mussie Eyob",
       role: "Founder, Hidmona",
       content:
-        "This platform transformed our business operations. The insights we've gained have driven a 34% increase in efficiency.",
+        "This platform transformed our business operations. The insights we've gained have driven a 99% increase in efficiency.",
       avatar:
         "/hidmona-H.jpg",
     },
@@ -16,8 +16,7 @@ const TestimonialsSection = () => {
       role: "CEO, PayOnTime",
       content:
         "The implementation was seamless, and their support team was exceptional throughout the entire process.",
-      avatar:
-        "/public/ahmed.png",
+      avatar:"/ahmed.png",
     },
     {
       name: "Abdikadir Hussein",

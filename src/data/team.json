@@ -1,18 +1,6 @@
 {
   "team": [
     {
-      "name": "Mohamed Barre",
-      "position": "Executive Director",
-      "bio": [
-        "Executive Director of Vivacom Ltd.",
-        "BSc in IT and Telecommunication.",
-        "Graduate at Vaasa University of Applied Science, Finland.",
-        "MSc in Software Engineering at University of West England, Bristol.",
-        "R&D Engineer with extensive experience with Fujitsu Labs, Java Consultancy and Nokia."
-      ],
-      "image": "/mohamed-photo.jpg"
-    },
-    {
       "name": "Hussein Salad",
       "position": "Executive Director",
       "bio": [
@@ -23,6 +11,19 @@
         "Certified Senior Solution Architect at Ericsson, Sub Domain Consumer Business Application Line Manager, Kingdom of Saudi Arabia."
       ],
       "image": "/salad.jpg"
+    },
+    {
+      "name": "Mohamed Barre",
+      "position": "Executive Director",
+      "bio": [
+        "Executive Director of Vivacom Ltd.",
+        "BSc in IT and Telecommunication.",
+        "Graduate at Vaasa University of Applied Science, Finland.",
+        "MSc in Software Engineering at University of West England, Bristol.",
+        "R&D Engineer with extensive experience with Fujitsu Labs, Java Consultancy and Nokia."
+      ],
+      "image": "/mohamed-photo.jpg"
     }
+    
   ]
 }
