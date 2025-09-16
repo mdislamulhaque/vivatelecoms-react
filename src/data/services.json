@@ -2,49 +2,49 @@
   "services": [
     {
       "title": "Software Development",
-      "image": "/services/software-development-min.png",
+      "image": "/services/software-development-min.webp",
       "link": "service-single.html",
       "desc": "We provide modern and scalable software solutions tailored to your business needs."
     },
     {
       "title": "Systems Integration",
-      "image": "/services/system-intregration-min.png",
+      "image": "/services/system-intregration-min.webp",
       "link": "service-single.html",
       "desc": "Seamlessly integrate systems to ensure efficiency, performance, and reliability."
     },
     {
       "title": "IT Project Management",
-      "image": "/services/it-project-management-min.png",
+      "image": "/services/it-project-management-min.webp",
       "link": "service-single.html",
       "desc": "Expert project management to deliver IT projects on time and within budget."
     },
     {
       "title": "ICT Consultancy",
-      "image": "/services/it-consultancy-min.png",
+      "image": "/services/it-consultancy-min.webp",
       "link": "service-single.html",
       "desc": "Professional consulting services to plan, optimize, and implement ICT strategies."
     },
     {
       "title": "ICT Systems Audit",
-      "image": "/services/it-system-audit-min.png",
+      "image": "/services/it-system-audit-min.webp",
       "link": "service-single.html",
       "desc": "Comprehensive audit services to identify risks and improve system efficiency."
     },
     {
       "title": "Managed IT Services",
-      "image": "/services/manage-it-services-min.png",
+      "image": "/services/manage-it-services-min.webp",
       "link": "service-single.html",
       "desc": "Outsource your IT operations for better performance, uptime, and cost savings."
     },
     {
       "title": "IT Infrastructure Assessment",
-      "image": "/services/it-infrastructure-min.png",
+      "image": "/services/it-infrastructure-min.webp",
       "link": "service-single.html",
       "desc": "Evaluate IT infrastructure to ensure scalability, performance, and security."
     },
     {
       "title": "IT Security",
-      "image": "/services/it-sequrity-min.png",
+      "image": "/services/it-sequrity-min.webp",
       "link": "service-single.html",
       "desc": "Protect your organization with robust cybersecurity and data protection solutions."
     }

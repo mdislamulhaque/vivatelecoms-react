@@ -10,7 +10,7 @@
         "Bachelor of Engineering from University of Jonkoping, Sweden.",
         "Certified Senior Solution Architect at Ericsson, Sub Domain Consumer Business Application Line Manager, Kingdom of Saudi Arabia."
       ],
-      "image": "/salad.jpg"
+      "image": "/salad.webp"
     },
     {
       "name": "Mohamed Barre",
@@ -22,8 +22,8 @@
         "MSc in Software Engineering at University of West England, Bristol.",
         "R&D Engineer with extensive experience with Fujitsu Labs, Java Consultancy and Nokia."
       ],
-      "image": "/mohamed-photo.jpg"
+      "image": "/mohamed-photo.webp"
     }
-    
+
   ]
 }

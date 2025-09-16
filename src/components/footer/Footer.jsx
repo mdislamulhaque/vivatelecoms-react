@@ -1,8 +1,10 @@
 import { Facebook, Twitter, Linkedin, Instagram, Youtube} from "lucide-react";
 import { Link } from "react-router";
 import navbarData from "../../data/navbar.json";
+import contactData from "../../data/contact.json";
 
 const Footer = () => {
+  const { email, phone } = contactData.contact;
   return (
     <footer className="bg-white text-gray-900 py-12">
       <div className="container mx-auto px-6">
@@ -55,9 +57,25 @@ const Footer = () => {
             <p className="text-gray-800">Upper Hill, Upper Hill Road,</p>
             <p className="text-gray-800 mb-4">NAIROBI</p>
 
-            <p className="text-gray-800">
-              <strong>Tel:</strong>{" "}
-              <span className="text-gray-800">+254 716568981/7</span>
+            <p className="mb-4">
+              <strong>📞 Phone:</strong>{" "}
+              <a
+                target="_blank"
+                href="tel:+8801712345678"
+                className="text-blue-600 underline"
+              >
+                {phone}
+              </a>
+            </p>
+            <p>
+              <strong>📧 Email:</strong>{" "}
+              <a
+                target="_blank"
+                href="mailto:info@example.com"
+                className="text-blue-600 underline"
+              >
+                {email}
+              </a>{" "}
             </p>
           </div>
           {/* Social Media */}

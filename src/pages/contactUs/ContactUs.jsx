@@ -170,10 +170,24 @@ const Contact = () => {
                 <strong>📍 Address:</strong> {address}
               </li>
               <li>
-                <strong>📞 Phone:</strong> {phone}
+                <strong>📞 Phone:</strong>{" "}
+                <a
+                  target="_blank"
+                  href="tel:+8801712345678"
+                  className="text-blue-600 underline"
+                >
+                  {phone}
+                </a>
               </li>
               <li>
-                <strong>📧 Email:</strong> {email}
+                <strong>📧 Email:</strong>{" "}
+                <a
+                  target="_blank"
+                  href="mailto:info@example.com"
+                  className="text-blue-600 underline"
+                >
+                  {email}
+                </a>{" "}
               </li>
             </ul>
           </motion.div>

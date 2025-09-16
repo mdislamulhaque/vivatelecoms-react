@@ -3,49 +3,49 @@
     {
       "title": "VERM",
       "desc": "This is fully edged ERP which integrates the following modules; Accounting, POS, HR, Sales and Purchases, Inventory, Education Management System and Manufacturing.",
-      "image": "/solutions/verp-min.png",
+      "image": "/solutions/verp-min.webp",
       "link": "#"
     },
     {
       "title": "VivacomPOS",
       "desc": "Provides an efficient, effective and faster way to sell, keep track, record and manage stock in; restaurants, fast foods, cafe, chemists, beauty shops, hotels, retail stores and others.",
-      "image": "/solutions/pos-min.png",
+      "image": "/solutions/pos-min.webp",
       "link": "#"
     },
     {
       "title": "GAAP POS",
       "desc": "Implement industrial designed point-of-sale terminals in restaurant, fast food, cafes, hotels and coffee shops, to improve your operational efficiency and increase profitability.",
-      "image": "/solutions/gaap-pos-min.png",
+      "image": "/solutions/gaap-pos-min.webp",
       "link": "#"
     },
     {
       "title": "Digital Menu Displays Solution",
       "desc": "A signage display solution that allows you to control the contents that are displayed on the menu boards.",
-      "image": "/solutions/testy-min.png",
+      "image": "/solutions/testy-min.webp",
       "link": "#"
     },
     {
       "title": "M-IPA",
       "desc": "Vivacom anti-fraud mobile system that authenticates validity of insurance policies. The service enables the policy holder to verify his/her policy before he/she leaves the policy issuer site.",
-      "image": "/solutions/mia-mobile-min.png",
+      "image": "/solutions/mia-mobile-min.webp",
       "link": "#"
     },
     {
       "title": "Customer Relationship Management (CRM)",
       "desc": "Vivacom Ltd Company will provide the best deal for Customer Relationship Management System (CRM) to facilitate and enhance effective and efficient Customer record updates and Notifications. Enables companies to create and manage leads, opportunities, contacts and campaigns.",
-      "image": "/solutions/360-min.png",
+      "image": "/solutions/360-min.webp",
       "link": "#"
     },
     {
       "title": "MIA (Mobile Insurance Application)",
       "desc": "A mobile application that enables customers to buy policy through mobile irrespective of their physical location.",
-      "image": "/solutions/mia-min.png",
+      "image": "/solutions/mia-min.webp",
       "link": "#"
     },
     {
       "title": "Service Delivery Platform",
       "desc": "Enable network operators and other communications service providers to go after new revenues and business models with the technology and professional services needed to introduce new applications and services quickly. It reduces the cost of developing, integrating and operating platforms and applications.",
-      "image": "/solutions/services-min.png",
+      "image": "/solutions/services-min.webp",
       "link": "#"
     }
   ]

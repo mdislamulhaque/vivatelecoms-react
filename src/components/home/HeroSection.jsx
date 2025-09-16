@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router";
 
-const images = [
-  "/services/it-project-management.png",
-  "/banner-2.png",
-  "/services/it-consultancy.png",
-];
+const images = ["/hossain-salad.png", "/banner-3.webp", "/banner-1.webp"];
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
@@ -34,7 +30,7 @@ const HeroSection = () => {
             transition={{ duration: 1.5 }}
           />
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-l from-[#8c4a86]/50 via-cyan-300/50 to-[#0f4174]/50" />{" "}
+        <div className="absolute inset-0 bg-gradient-to-l from-[#8c4a86]/50 via-cyan-300/50 to-[#0f4174]/50" />
         {/* Overlay for readability */}
       </div>
 
