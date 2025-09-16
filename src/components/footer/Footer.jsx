@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram, Youtube} from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react";
 import { Link } from "react-router";
 import navbarData from "../../data/navbar.json";
 import contactData from "../../data/contact.json";
@@ -61,7 +61,7 @@ const Footer = () => {
               <strong>📞 Phone:</strong>{" "}
               <a
                 target="_blank"
-                href="tel:+8801712345678"
+                href="tel:+254 716568981"
                 className="text-blue-600 underline"
               >
                 {phone}
@@ -71,7 +71,7 @@ const Footer = () => {
               <strong>📧 Email:</strong>{" "}
               <a
                 target="_blank"
-                href="mailto:info@example.com"
+                href={`mailto:${email}`}
                 className="text-blue-600 underline"
               >
                 {email}
