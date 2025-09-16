@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import navbarData from "../../data/navbar.json";
 import { NavLink, Link } from "react-router";
@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuRef = useRef(null);
 
   // scroll listener
   useEffect(() => {
@@ -16,11 +17,31 @@ const MainNavbar = () => {
       } else {
         setScrolled(false);
       }
+
+      // close mobile menu on scroll
+      if (isOpen) setIsOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen]);
+
+  // click outside listener
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
 
   return (
     <nav
@@ -59,8 +80,8 @@ const MainNavbar = () => {
             </li>
           ))}
         </ul>
+
         <div className="hidden md:block">
-          {/* Contact Button */}
           <Link to="/contact-us">
             <motion.button
               initial={{ opacity: 0, scale: 0.8 }}
@@ -69,8 +90,10 @@ const MainNavbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`${
-                scrolled ? "bg-purple-700 text-white hover:bg-purple-800 transition" : "bg-white"
-              } text-blue-800 font-medium rounded-full py-2 px-4 shadow-lg uppercase tracking-wider cursor-pointer`}
+                scrolled
+                  ? "bg-purple-700 text-white hover:bg-purple-800 transition"
+                  : "bg-white text-blue-800"
+              } font-medium rounded-full py-2 px-4 shadow-lg uppercase tracking-wider cursor-pointer`}
             >
               Contact Us
             </motion.button>
@@ -90,42 +113,40 @@ const MainNavbar = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <>
-          <ul
-            className={`md:hidden flex flex-col px-4 py-3 space-y-3 border-t ${
-              scrolled
-                ? "bg-white border-gray-200"
-                : "bg-gray-900 border-gray-700"
-            }`}
-          >
-            {navbarData.navItems.map((item, idx) => (
-              <li key={idx}>
-                <NavLink
-                  to={item.url}
-                  onClick={() => setIsOpen(false)} // <-- এখানে click এ menu hide
-                  className={`block transition ${
-                    scrolled
-                      ? "text-gray-900 hover:text-blue-700"
-                      : "text-white hover:text-gray-300"
-                  }`}
-                >
-                  {item.label}
-                </NavLink>
-              </li>
-            ))}
-            <div className="bg-purple-900/90 rounded-full p-2 text-white text-sm text-center md:hidden  hover:scale-105 transition">
-              {/* Contact Button */}
-              <Link to="/contact-us">
-                <button
-                  onClick={() => setIsOpen(false)}
-                  className="cursor-pointer"
-                >
-                  Contact Us
-                </button>
-              </Link>
-            </div>
-          </ul>
-        </>
+        <ul
+          ref={menuRef}
+          className={`md:hidden flex flex-col px-4 py-3 space-y-3 border-t ${
+            scrolled
+              ? "bg-white border-gray-200"
+              : "bg-gray-900 border-gray-700"
+          }`}
+        >
+          {navbarData.navItems.map((item, idx) => (
+            <li key={idx}>
+              <NavLink
+                to={item.url}
+                onClick={() => setIsOpen(false)}
+                className={`block transition uppercase ${
+                  scrolled
+                    ? "text-gray-900 hover:text-blue-700"
+                    : "text-white hover:text-gray-300"
+                }`}
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+          <div className="bg-purple-900/90 rounded-md p-2 text-white text-sm text-center md:hidden hover:scale-105 transition">
+            <Link to="/contact-us">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="cursor-pointer uppercase"
+              >
+                Contact Us
+              </button>
+            </Link>
+          </div>
+        </ul>
       )}
     </nav>
   );

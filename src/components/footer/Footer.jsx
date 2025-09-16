@@ -73,7 +73,7 @@ const Footer = () => {
                 <Twitter className="w-6 h-6" />
               </a>
               <a
-                href="https://facebook.com/"
+                href="https://www.facebook.com/vivacomlimited"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 hover:text-gray-900 transition-colors"
