@@ -5,10 +5,10 @@
     { "label": "Home", "url": "/" },
     {
       "label": "Services",
-      "url": "/services"
+      "url": "/our-services"
     },
-    { "label": "Solutions", "url": "/solutions" },
-    { "label": "Partners", "url": "/partners" },
+    { "label": "Solutions", "url": "/our-solutions" },
+    { "label": "Partners", "url": "/our-partners" },
     { "label": "Personnel", "url": "/team" },
     { "label": "Careers", "url": "/careers" },
     { "label": "About Us", "url": "/about-us" }

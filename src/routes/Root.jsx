@@ -9,6 +9,7 @@ import Careers from "../pages/careers/Careers";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import ContactUs from "../pages/contactUs/ContactUs";
 import NotFoundPage from "../pages/notFoundPage/NotFoundPage";
+import PageTransition from "../components/PageTransition";
 
 export const router = createBrowserRouter([
   {
@@ -17,39 +18,75 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: (
+          <PageTransition>
+            <Home />
+          </PageTransition>
+        ),
       },
       {
-        path: "/services",
-        element: <Services />,
+        path: "/our-services",
+        element: (
+          <PageTransition>
+            <Services />
+          </PageTransition>
+        ),
       },
       {
-        path: "/solutions",
-        element: <Solutions />,
+        path: "/our-solutions",
+        element: (
+          <PageTransition>
+            <Solutions />
+          </PageTransition>
+        ),
       },
       {
-        path: "/partners",
-        element: <Partners />,
+        path: "/our-partners",
+        element: (
+          <PageTransition>
+            <Partners />
+          </PageTransition>
+        ),
       },
       {
         path: "/team",
-        element: <Team />,
+        element: (
+          <PageTransition>
+            <Team />
+          </PageTransition>
+        ),
       },
       {
         path: "/careers",
-        element: <Careers />,
+        element: (
+          <PageTransition>
+            <Careers />
+          </PageTransition>
+        ),
       },
       {
         path: "/about-us",
-        element: <AboutUs />,
+        element: (
+          <PageTransition>
+            <AboutUs />
+          </PageTransition>
+        ),
       },
       {
         path: "/contact-us",
-        element: <ContactUs />,
+        element: (
+          <PageTransition>
+            <ContactUs />
+          </PageTransition>
+        ),
       },
       {
         path: "/*",
-        element: <NotFoundPage />,
+        element: (
+          <PageTransition>
+            <NotFoundPage />
+          </PageTransition>
+        ),
       },
     ],
   },

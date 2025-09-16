@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
       content:
         "The implementation was seamless, and their support team was exceptional throughout the entire process.",
       avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+        "/public/ahmed.png",
     },
     {
       name: "Abdikadir Hussein",
