@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram} from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Youtube} from "lucide-react";
 import { Link } from "react-router";
 import navbarData from "../../data/navbar.json";
 
@@ -65,7 +65,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a
-                href="https://twitter.com/"
+                href="https://x.com/vivacom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 hover:text-gray-900 transition-colors"
@@ -81,7 +81,7 @@ const Footer = () => {
                 <Facebook className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/company/vivacom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 hover:text-gray-900  transition-colors"
@@ -89,12 +89,12 @@ const Footer = () => {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://instagram.com/"
+                href="https://www.youtube.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 hover:text-gray-900  transition-colors"
               >
-                <Instagram className="w-6 h-6" />
+                <Youtube className="w-6 h-6" />
               </a>
             </div>
           </div>
